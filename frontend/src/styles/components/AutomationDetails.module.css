@@ -1,0 +1,344 @@
+.viewContainer {
+  padding-bottom: 6rem;
+}
+
+.heroSection {
+  background-color: var(--bg-tertiary);
+  border-radius: 32px;
+  padding: 4rem 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroGlow {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--accent-alpha-10) 0%, transparent 60%);
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroIconWrapper {
+  display: inline-flex;
+  padding: 1.5rem;
+  background-color: var(--accent-alpha-15);
+  border-radius: 28px;
+  color: var(--accent-primary);
+  margin-bottom: 2rem;
+  border: 2px solid var(--accent-alpha-25);
+  box-shadow: 0 0 40px -10px var(--accent-alpha-40);
+  animation: float 6s ease-in-out infinite;
+}
+
+.heroIconGlow {
+  filter: drop-shadow(0 0 8px var(--accent-alpha-60));
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.heroDesc {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tag {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--bg-primary);
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+}
+
+.gridHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gridTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.gridDesc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.featureCard {
+  background-color: var(--bg-primary);
+  border-radius: 24px;
+  padding: 2.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px -5px var(--black-alpha-05);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -10px var(--accent-alpha-25);
+  border-color: var(--accent-alpha-40);
+}
+
+.featureCard:hover .featureIconWrapper {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 20px 0 var(--accent-alpha-40);
+}
+
+.featureCard:hover .featureIconGlow {
+  opacity: 1;
+}
+
+.featureIconWrapper {
+  display: inline-flex;
+  padding: 1.25rem;
+  background-color: var(--accent-alpha-10);
+  border-radius: 20px;
+  color: var(--accent-primary);
+  margin-bottom: 1.5rem;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid var(--accent-alpha-15);
+  position: relative;
+}
+
+.featureIconInner {
+  z-index: 1;
+  position: relative;
+}
+
+/* Reusing 'heroIconGlow' name concept but specific for feature */
+.featureIconGlow {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle, var(--accent-alpha-30) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.featureDesc {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.featureListBullet {
+  margin-top: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+}
+
+.resultsSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+  background-color: var(--bg-tertiary);
+  border-radius: 32px;
+  padding: 4rem;
+  border: 1px solid var(--border-color);
+}
+
+.resultsContent {
+  flex: 1 1 400px;
+}
+
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.resultsTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.resultsDesc {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.resultsBenefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.benefitItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.benefitTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.benefitTitle {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.benefitDesc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.ctaCard {
+  flex: 1 1 300px;
+  background-color: var(--bg-primary);
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  box-shadow: 0 20px 40px -10px var(--black-alpha-10);
+}
+
+.ctaTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ctaDesc {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  width: 100%;
+  padding: 1.25rem;
+  background-color: var(--accent-primary);
+  color: var(--white);
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ctaBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px var(--accent-alpha-50);
+}
+
+.ctaFooter {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 3rem 1.25rem;
+    border-radius: 24px;
+    margin-bottom: 3rem;
+  }
+
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+
+  .heroDesc {
+    font-size: 1.1rem;
+  }
+
+  .gridTitle {
+    font-size: 2rem;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .featureCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .resultsSection {
+    padding: 2.5rem 1.5rem;
+    gap: 2.5rem;
+    border-radius: 24px;
+  }
+
+  .resultsTitle {
+    font-size: 1.75rem;
+  }
+
+  .resultsBenefitsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaCard {
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,0 +1,78 @@
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  backdrop-filter: blur(12px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.overlayBackground {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.85;
+  z-index: -1;
+  background-color: var(--bg-primary);
+}
+
+.modalWindow {
+  background-color: var(--bg-secondary);
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px -12px var(--black-alpha-20);
+}
+
+.header {
+  padding: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerBackground {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.95;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  background-color: var(--bg-secondary);
+}
+
+.headerContent {
+  position: relative;
+  z-index: 1;
+}
+
+.closeButton {
+  position: relative;
+  z-index: 1;
+  color: var(--text-secondary);
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  display: flex;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.closeButton:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+.body {
+  padding: 3rem 2rem;
+}

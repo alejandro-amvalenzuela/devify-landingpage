@@ -1,0 +1,113 @@
+:root {
+  /* Estrategia de Tema por Defecto (Tema Oscuro) */
+  --bg-primary: #0f172a; /* Slate 900 */
+  --bg-secondary: #1e293b; /* Slate 800 */
+  --bg-tertiary: #334155; /* Slate 700 */
+  
+  --text-primary: #f8fafc; /* Slate 50 */
+  --text-secondary: #94a3b8; /* Slate 400 */
+  --text-inverse: #0f172a; /* Text on light backgrounds if needed */
+  
+  --accent-primary: #3b82f6; /* Blue 500 */
+  --accent-hover: #2563eb; /* Blue 600 */
+  --accent-glow: rgba(59, 130, 246, 0.4);
+  
+  --accent-alpha-05: rgba(59, 130, 246, 0.05);
+  --accent-alpha-10: rgba(59, 130, 246, 0.1);
+  --accent-alpha-15: rgba(59, 130, 246, 0.15);
+  --accent-alpha-20: rgba(59, 130, 246, 0.2);
+  --accent-alpha-25: rgba(59, 130, 246, 0.25);
+  --accent-alpha-30: rgba(59, 130, 246, 0.3);
+  --accent-alpha-40: rgba(59, 130, 246, 0.4);
+  --accent-alpha-50: rgba(59, 130, 246, 0.5);
+  --accent-alpha-60: rgba(59, 130, 246, 0.6);
+  --accent-alpha-70: rgba(59, 130, 246, 0.7);
+
+  --border-color: #334155; /* Slate 700 */
+  
+  --white: #ffffff;
+  --white-alpha-05: rgba(255, 255, 255, 0.05);
+  --white-alpha-10: rgba(255, 255, 255, 0.1);
+  --white-alpha-20: rgba(255, 255, 255, 0.2);
+
+  --black-alpha-05: rgba(0, 0, 0, 0.05);
+  --black-alpha-10: rgba(0, 0, 0, 0.1);
+  --black-alpha-15: rgba(0, 0, 0, 0.15);
+  --black-alpha-20: rgba(0, 0, 0, 0.2);
+  --black-alpha-25: rgba(0, 0, 0, 0.25);
+
+  --success-color: #10b981;
+  --success-alpha-10: rgba(16, 185, 129, 0.1);
+
+  --purple-accent: #8b5cf6;
+  --purple-alpha-05: rgba(139, 92, 246, 0.05);
+  --purple-alpha-10: rgba(139, 92, 246, 0.1);
+  --purple-alpha-15: rgba(139, 92, 246, 0.15);
+  --purple-alpha-20: rgba(139, 92, 246, 0.2);
+  --purple-alpha-39: rgba(139, 92, 246, 0.39);
+  --purple-alpha-50: rgba(139, 92, 246, 0.5);
+}
+
+/* Variables de Tema Claro */
+:root[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f4f5;
+  --bg-tertiary: #ffffff;
+  
+  --text-primary: #18181b;
+  --text-secondary: #52525b;
+  --text-inverse: #ffffff;
+  
+  --accent-primary: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-glow: rgba(37, 99, 235, 0.2);
+
+  --accent-alpha-05: rgba(37, 99, 235, 0.05);
+  --accent-alpha-10: rgba(37, 99, 235, 0.1);
+  --accent-alpha-15: rgba(37, 99, 235, 0.15);
+  --accent-alpha-20: rgba(37, 99, 235, 0.2);
+  --accent-alpha-25: rgba(37, 99, 235, 0.25);
+  --accent-alpha-30: rgba(37, 99, 235, 0.3);
+  --accent-alpha-40: rgba(37, 99, 235, 0.4);
+  --accent-alpha-50: rgba(37, 99, 235, 0.5);
+  --accent-alpha-60: rgba(37, 99, 235, 0.6);
+  --accent-alpha-70: rgba(37, 99, 235, 0.7);
+
+  --border-color: #e4e4e7;
+  
+  --white: #ffffff;
+  --white-alpha-05: rgba(0, 0, 0, 0.02); /* Inverted concept for light theme borders/shadows */
+  --white-alpha-10: rgba(0, 0, 0, 0.05);
+  --white-alpha-20: rgba(0, 0, 0, 0.1);
+
+  --black-alpha-05: rgba(0, 0, 0, 0.05);
+  --black-alpha-10: rgba(0, 0, 0, 0.1);
+  --black-alpha-15: rgba(0, 0, 0, 0.15);
+  --black-alpha-20: rgba(0, 0, 0, 0.2);
+  --black-alpha-25: rgba(0, 0, 0, 0.25);
+
+  --success-color: #059669;
+  --success-alpha-10: rgba(5, 150, 105, 0.1);
+
+  --purple-accent: #7c3aed;
+  --purple-alpha-05: rgba(124, 58, 237, 0.05);
+  --purple-alpha-10: rgba(124, 58, 237, 0.1);
+  --purple-alpha-15: rgba(124, 58, 237, 0.15);
+  --purple-alpha-20: rgba(124, 58, 237, 0.2);
+  --purple-alpha-39: rgba(124, 58, 237, 0.39);
+  --purple-alpha-50: rgba(124, 58, 237, 0.5);
+}
+
+/* Clases de Utilidad para Fondos */
+.bg-primary { background-color: var(--bg-primary); }
+.bg-secondary { background-color: var(--bg-secondary); }
+.bg-tertiary { background-color: var(--bg-tertiary); }
+.bg-accent { background-color: var(--accent-primary); }
+
+/* Clases de Utilidad para Colores de Texto */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-accent { color: var(--accent-primary); }
+
+/* Clases de Utilidad para Bordes */
+.border-subtle { border: 1px solid var(--border-color); }

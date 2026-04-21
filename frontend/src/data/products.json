@@ -1,0 +1,10 @@
+[
+  {
+    "id": "pos",
+    "title": "POS OmniChannel",
+    "description": "Sistema de Punto de Venta inteligente con sincronización en la nube, gestión de inventario en tiempo real y facturación electrónica integrada.",
+    "tags": ["SaaS", "Fintech", "Retail"],
+    "images": ["/images/pos-main.png"],
+    "showDetails": true
+  }
+]

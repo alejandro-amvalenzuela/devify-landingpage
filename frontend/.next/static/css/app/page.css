@@ -1,0 +1,169 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/styles/components/CustomSoftware.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.CustomSoftware_section__fsYe7 {
+  padding: 8rem 0;
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.CustomSoftware_container__L5xYz {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.CustomSoftware_header__aQ6yJ {
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CustomSoftware_subtitle__TP59l {
+  color: var(--accent-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.CustomSoftware_title__KEWRR {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.CustomSoftware_description__f_OOT {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.CustomSoftware_grid__8RvJN {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.CustomSoftware_card__payWQ {
+  padding: 3.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 32px;
+  border: 1px solid var(--border-color);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  cursor: default;
+}
+
+.CustomSoftware_card__payWQ:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.2);
+}
+
+.CustomSoftware_iconWrapper__BDlbR {
+  width: 72px;
+  height: 72px;
+  background-color: var(--bg-tertiary);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  border: 1px solid var(--border-color);
+  transition: all 0.4s ease;
+}
+
+.CustomSoftware_card__payWQ:hover .CustomSoftware_iconWrapper__BDlbR {
+  background-color: var(--accent-primary);
+  color: white;
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.CustomSoftware_cardTitle__A1cIA {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.CustomSoftware_cardContent__eM8Tv {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.CustomSoftware_featureList__SLf_6 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.CustomSoftware_featureItem__ufX_Y {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.CustomSoftware_bullet___cIHg {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent-primary);
+  border-radius: 50%;
+}
+
+.CustomSoftware_ctaContainer__D3tnc {
+  text-align: center;
+}
+
+.CustomSoftware_ctaBtn__jTIBM {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-hover) 100%);
+  color: white;
+  padding: 1.25rem 2.5rem;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 30px -10px var(--accent-alpha-40);
+}
+
+.CustomSoftware_ctaBtn__jTIBM:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px -10px var(--accent-alpha-60);
+}
+
+@media (max-width: 768px) {
+  .CustomSoftware_section__fsYe7 {
+    padding: 5rem 0;
+  }
+  
+  .CustomSoftware_title__KEWRR {
+    font-size: 2.25rem;
+  }
+
+  .CustomSoftware_grid__8RvJN {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .CustomSoftware_card__payWQ {
+    padding: 2.5rem 2rem;
+  }
+}
+
