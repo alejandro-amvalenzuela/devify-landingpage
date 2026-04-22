@@ -38,7 +38,7 @@ export default function Products() {
               {/* Contenedor de Imagen */}
               <div style={{
                 flex: '1 1 620px',
-                height: 'clamp(350px, 40vh, 400px)',
+                height: 'clamp(450px, 40vh, 400px)',
                 background: 'linear-gradient(135deg, var(--bg-tertiary) 0%, rgba(59,130,246,0.1) 100%)',
                 borderRadius: '24px',
                 border: '1px solid var(--border-color)',
