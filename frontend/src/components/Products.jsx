@@ -15,7 +15,7 @@ export default function Products() {
         <div className="reveal-up" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem', flexWrap: 'wrap', gap: '2rem' }}>
           <div>
             <h2 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '1rem' }}>
-              Nuestros Productos Estrella
+              Nuestros Productos
             </h2>
             <p className="text-secondary" style={{ fontSize: '1.1rem', maxWidth: '600px' }}>
               Soluciones pre-construidas y altamente personalizables para acelerar tu salida al mercado.
@@ -37,8 +37,8 @@ export default function Products() {
             }}>
               {/* Contenedor de Imagen */}
               <div style={{
-                flex: '1 1 320px',
-                height: 'clamp(250px, 40vh, 400px)',
+                flex: '1 1 620px',
+                height: 'clamp(350px, 40vh, 400px)',
                 background: 'linear-gradient(135deg, var(--bg-tertiary) 0%, rgba(59,130,246,0.1) 100%)',
                 borderRadius: '24px',
                 border: '1px solid var(--border-color)',
@@ -76,19 +76,31 @@ export default function Products() {
 
               {/* Contenido */}
               <div style={{ flex: '1 1 400px' }}>
-                <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
+                <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
                   {product.tags.map(tag => (
-                    <span key={tag} style={{
-                      padding: '0.35rem 1rem',
-                      borderRadius: '999px',
-                      backgroundColor: 'rgba(59, 130, 246, 0.1)',
-                      color: 'var(--accent-primary)',
+                    <div key={tag} style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.6rem',
+                      padding: '0.6rem 1.25rem',
+                      borderRadius: '14px',
+                      backgroundColor: 'var(--bg-tertiary)',
+                      color: 'var(--text-primary)',
                       fontSize: '0.85rem',
                       fontWeight: 600,
-                      border: '1px solid rgba(59, 130, 246, 0.2)'
+                      border: '1px solid var(--border-color)',
+                      boxShadow: '0 4px 12px -2px rgba(0, 0, 0, 0.05)',
+                      transition: 'all 0.3s ease'
                     }}>
+                      <div style={{ 
+                        width: '8px', 
+                        height: '8px', 
+                        borderRadius: '50%', 
+                        backgroundColor: 'var(--accent-primary)',
+                        boxShadow: '0 0 10px var(--accent-glow)'
+                      }} />
                       {tag}
-                    </span>
+                    </div>
                   ))}
                 </div>
                 <h3 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', lineHeight: 1.2 }}>{product.title}</h3>

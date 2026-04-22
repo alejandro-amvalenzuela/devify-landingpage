@@ -1,10 +1,10 @@
 [
   {
-    "id": "pos",
-    "title": "POS OmniChannel",
-    "description": "Sistema de Punto de Venta inteligente con sincronización en la nube, gestión de inventario en tiempo real y facturación electrónica integrada.",
-    "tags": ["SaaS", "Fintech", "Retail"],
-    "images": ["/images/pos-main.png"],
-    "showDetails": true
+    "id": "agro",
+    "title": "AgroPilot",
+    "description": "Sistema de gestión inteligente para el sector agrícola con herramientas avanzadas de análisis y optimización de recursos, diseñado para mejorar la eficiencia y rentabilidad de las explotaciones agrícolas.",
+    "tags": ["Mapa Interactivo", "Multi Predios", "Detección de Plagas con IA "],
+    "images": ["/images/agropilot-01.png"],
+    "showDetails": false
   }
 ]
